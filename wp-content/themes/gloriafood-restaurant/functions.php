@@ -116,7 +116,7 @@ function gloriafood_widgets_init() {
 			'name'          => __( 'Homepage', 'gloriafood-restaurant' ),
 			'id'            => 'glf-homepage',
 			'description'   => __( 'Add widgets here to build your homepage.', 'gloriafood-restaurant' ),
-			'before_widget' => '<div class="container-fluid glf-background-card"><div  id="%1s" class="container glf-card"><div class="widget %2s">',
+			'before_widget' => '<div class="container-fluid glf-background-card"><div  id="%1s" class="container"><div class="widget %2s">',
 			'after_widget'  => '</div></div></div>',
 			'before_title'  => '<h2>',
 			'after_title'   => '</h2>',

@@ -1,35 +1,53 @@
 <?php
 get_header();
-?>
+	if ( is_front_page()) {?>
 
-    <section id="primary" class="content-area">
-        <main id="main" class="site-main">
+		<div class="container">
+			<section id="primary" class="content-area">
+				<main id="main" class="site-main">
 
-			<?php
-			if ( is_front_page() && ! is_home() ) {
-				dynamic_sidebar( 'homepage' );
-			} else {
-				echo "<div class='container'>";
-				if ( have_posts() ) {
+					<?php
 
-					// Load posts loop.
-					while ( have_posts() ) {
+					/* Start the Loop */
+					while ( have_posts() ) :
 						the_post();
-						get_template_part( 'template-parts/content/content' );
-					}
 
-					// Previous/next page navigation.
-					gloriafood_the_posts_navigation();
+						get_template_part( 'template-parts/content/content', 'page' );
 
-				} else {
+						// If comments are open or we have at least one comment, load up the comment template.
+						if ( comments_open() || get_comments_number() ) {
+							comments_template();
+						}
 
-					// If no content, include the "No posts found" template.
-					get_template_part( 'template-parts/content/content', 'none' );
+					endwhile; // End of the loop.
+					?>
 
-				}
-				echo '</div>';
+				</main><!-- #main -->
+			</section><!-- #primary -->
+		</div>
+		<?php
+	} else {
+		echo "<div class='container'>";
+		if ( have_posts() ) {
+
+			// Load posts loop.
+			while ( have_posts() ) {
+				the_post();
+				get_template_part( 'template-parts/content/content' );
 			}
-			?>
+
+			// Previous/next page navigation.
+			gloriafood_the_posts_navigation();
+
+		} else {
+
+			// If no content, include the "No posts found" template.
+			get_template_part( 'template-parts/content/content', 'none' );
+
+		}
+		echo '</div>';
+	}
+	?>
 
         </main><!-- .site-main -->
     </section><!-- .content-area -->

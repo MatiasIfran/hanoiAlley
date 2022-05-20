@@ -156,61 +156,6 @@ body.admin-bar .navbar {
 
 }
 
-/** Handle admin bar - END **/
-
-/** GloriaFood plugin - START **/
-.gloriafood-button,
-.glf-button {
-    padding: 12px !important;
-}
-
-.gloriafood-button.reservation,
-.glf-button.reservation {
-    padding: 12px !important;
-}
-
-.jumbotron .gloriafood-button,
-.jumbotron .glf-button,
-#glf-navigation-order-buttons .gloriafood-button,
-#glf-navigation-order-buttons .glf-button {
-    margin-left: 0.5rem;
-    background-image: none;
-    box-shadow: none;
-}
-
-.jumbotron .gloriafood-button.reservation,
-.jumbotron .glf-button.reservation,
-#glf-navigation-order-buttons .gloriafood-button.reservation,
-#glf-navigation-order-buttons .glf-button.reservation {
-    margin-left: 0;
-    margin-right: 0.5rem;
-    background-image: none;
-    box-shadow: none;
-}
-
-@media (max-width: 768px) {
-    #glf-navigation-order-buttons {
-        display: none !important;
-    }
-}
-
-@media (max-width: 576px) {
-    .jumbotron .gloriafood-button,
-    .jumbotron .glf-button,
-    #glf-navigation-order-buttons .gloriafood-button,
-    #glf-navigation-order-buttons .glf-button {
-        margin-left: 0;
-    }
-
-    .jumbotron .gloriafood-button.reservation,
-    .jumbotron .glf-button.reservation,
-    #glf-navigation-order-buttons .gloriafood-button.reservation,
-    #glf-navigation-order-buttons .glf-button.reservation {
-        margin-right: 0;
-    }
-}
-
-/** GloriaFood plugin - END **/
 
 /** Custom order buttons - START **/
 .glf-button.custom-order-button {
@@ -260,7 +205,6 @@ p.jumbotron-cta-buttons a {
 
 /** General styles - START **/
 body {
-    padding-top: 5rem;
     font-family: 'Open Sans', sans-serif;
     color: #333;
 }
@@ -304,7 +248,7 @@ span.glf-card-subtitle-dash {
 }
 
 span.glf-card-subtitle {
-    color: #f09c48;
+    color: #dbcc7e;
     font-weight: 600;
     display: block;
     text-transform: uppercase;
@@ -313,6 +257,10 @@ span.glf-card-subtitle {
 .jumbotron {
     text-align: center;
     background-color: transparent;
+    height: calc(100vh - 32px);
+    max-height: 100%;
+    overflow: hidden;
+    position: relative;
 }
 
 .jumbotron .jumbotron-description-container {
@@ -405,7 +353,7 @@ div.widget_glf-promo-cards > div.row {
 }
 
 .glf-promo-card {
-    border: 0.0625rem solid #f09c48;
+    border: 0.0625rem solid #dbcc7e;
     padding: 1.8125rem;
     height: 100%;
     display: flex;
@@ -420,7 +368,7 @@ div.widget_glf-promo-cards > div.row {
 .glf-promo-card-price {
     background-color: #f0f0f0;
     padding: 1rem;
-    color: #f09c48;
+    color: #dbcc7e;
     display: inline-block;
     font-style: italic;
     margin-top: auto;
@@ -465,15 +413,20 @@ footer.site-footer a:focus {
 }
 
 .navbar {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    height: 5rem;
-    background-color: #fff;
+    background-color: transparent;
     box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.07);
 }
 
+.navbar .navbar-brand {
+    color: #fff;
+}
+
+.navbar .navbar-brand:hover {
+    color: #dbcc7e;
+}
+
 .navbar .navbar-nav a {
-    color: #242424;
+    color: #333;
     text-transform: uppercase;
     font-size: 0.875rem;
 }
@@ -486,6 +439,10 @@ footer.site-footer a:focus {
 .navbar-expand-md .navbar-nav .nav-link {
     padding-left: 1rem;
     padding-right: 1rem;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: #dbcc7e;
 }
 
 @media (min-width: 576px) {
@@ -512,20 +469,7 @@ footer.site-footer a:focus {
     background-position: center center;
 }
 
-.container-fluid.glf-background-card:nth-child(6n+2) {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/starter/background-1.jpg");
-    background-size: cover;
-    background-position: center center;
-}
-
-.container-fluid.glf-background-card:nth-child(6n+4) {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/starter/background-2.jpg");
-    background-size: cover;
-    background-position: center center;
-}
-
-.container-fluid.glf-background-card:nth-child(6n+6) {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/starter/background-3.jpg");
+.container-fluid.glf-background-card {
     background-size: cover;
     background-position: center center;
 }
@@ -667,10 +611,6 @@ h6 {
 /** Non-home pages - START **/
 main {
     padding: 7.5rem 0;
-}
-
-.home main {
-    padding: 0;
 }
 
 .home.blog main {
@@ -885,7 +825,7 @@ form.comment-form p.form-submit {
 }
 
 form.comment-form p.form-submit input.submit {
-    background-color: #f09c48;
+    background-color: #dbcc7e;
     font-weight: bold;
     color: white;
     padding: 1rem;
@@ -922,7 +862,7 @@ button#TB_closeWindowButton:focus .tb-close-icon {
 
 /** Navigation - START **/
 .navbar-light .navbar-nav .nav-link {
-    color: rgba(0, 0, 0, 0.9);
+    color: #fff;
     font-size: 0.875rem;
 }
 
@@ -930,12 +870,12 @@ button#TB_closeWindowButton:focus .tb-close-icon {
 .navbar-light .navbar-nav .active > .nav-link,
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .nav-link.active {
-    color: #f09c48;
+    color: #dbcc7e;
 }
 
 .navbar .navbar-nav a.dropdown-item.active, .navbar .navbar-nav a.dropdown-item:active {
-    color: #fff;
-    background-color: #f09c48;
+    color: #333;
+    background-color: #fff;
 }
 
 /** Navigation - END **/
@@ -1017,7 +957,7 @@ div.glf-background-card:nth-child(2n+2) div.widget {
     background-color: #fff;
     padding: 1.8125rem;
     border: 0.625rem solid #fff;
-    box-shadow: inset 0 0 0 1px #f09c48;
+    box-shadow: inset 0 0 0 1px #dbcc7e;
 }
 
 div.glf-background-card:nth-child(2n+2) div.widget.widget_glf-promo-cards {
