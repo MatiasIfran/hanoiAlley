@@ -58,7 +58,7 @@ class Glf_Promo_Cards extends WP_Widget {
 			if ( ! empty( $instance[ 'title_' . $i ] ) ) {
 				$pos ++;
 				echo "<div class='col-lg-" . ( $count_to_size['lg'][ $count ][ $pos - 1 ] ) . " col-md-" . ( $count_to_size['md'][ $count ][ $pos - 1 ] ) . " glf-promo-card-supercontainer'>
-                    <div class='glf-promo-card-container'>
+                    <div class='glf-promo-card-container' id='card_".$i."'>
                         <div class='glf-promo-card'>
                             <h3>{$instance[ 'title_' . $i ]}</h3>
                             <span class='glf-card-subbtitle-container'>

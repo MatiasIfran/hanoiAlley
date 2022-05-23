@@ -73,8 +73,16 @@
     <div class="container-fluid header-container">
     
             <?php if ( is_front_page() ) { ?>
-                <div class='header'>
-                <?php echo do_shortcode('[metaslider id="93"]'); ?>
+                <div class='header wp-block-cover' style="padding:0px">
+                    <?php echo do_shortcode('[metaslider id="93"]'); ?>
+                    <div class="wp-block-cover__inner-container" style="position: absolute">
+                        <h1 class="lead"><?php bloginfo( 'name' ); ?></h1>
+                        <h2 class="jumbotron-description-container">
+                            <span class="jumbotron-description-left-dash ml-auto"></span>
+                            <span class="jumbotron-description lead"><?php bloginfo( 'description' ); ?></span>
+                            <span class="jumbotron-description-right-dash mr-auto"></span>
+                        </h2>
+                    </div>
                 
             <?php } elseif ( is_404() ) { 
                 echo "<h1 class='lead'>" . esc_html__( 'Oops! That page can&rsquo;t be found.', 'gloriafood-restaurant' ) . "</h1>";
@@ -95,50 +103,4 @@
             ?>
                 
         </div>
- 
-        <!-- <div class="jumbotron">
-            <?php
-		if ( is_front_page() ) {
-			?>
-            <h1 class="lead"><?php bloginfo( 'name' ); ?></h1>
-            <h2 class="jumbotron-description-container">
-                <span class="jumbotron-description-left-dash ml-auto"></span>
-                <span class="jumbotron-description lead"><?php bloginfo( 'description' ); ?></span>
-                <span class="jumbotron-description-right-dash mr-auto"></span>
-            </h2>
-            <?php
-			if ( $gloriafood_order_buttons = gloriafood_generate_order_buttons_html() ) {
-				echo "<p class='lead jumbotron-cta-buttons' ".(gloriafood_get_order_buttons_count()==1?"style='grid-template-columns:1fr;'":'').">" . $gloriafood_order_buttons . "</p>";
-			}
-		} elseif ( is_404() ) {
-			echo "<h1 class='lead'>" . esc_html__( 'Oops! That page can&rsquo;t be found.', 'gloriafood-restaurant' ) . "</h1>";
-		} elseif ( is_search() ) {
-			if ( have_posts() ) {
-				echo "<h1 class='lead'>" . esc_html__( 'Search results for:', 'gloriafood-restaurant' ) . ' ' . get_search_query() . "</h1>";
-			} else {
-				echo "<h1 class='lead'>" . esc_html__( "Nothing found", 'gloriafood-restaurant' ) . "</h1>";
-			}
-		} elseif ( is_archive() ) {
-			echo "<h1 class='lead'>" . get_the_archive_title() . "</h1>";
-		} elseif ( is_home() ) {
-			echo "<h1 class='lead'>" . get_the_title( get_option( 'page_for_posts', true ) ) . "</h1>";
-		} else {
-			echo "<h1 class='lead'>" . get_the_title() . "</h1>";
-		}
-		?>
-        </div> -->
     </div>
-
-    <!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="http://localhost/Hanoialley/wp-content/uploads/2022/05/hanoi-alley-ID_Mesa-de-trabajo-1-copia.jpg" class="d-block" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="http://localhost/Hanoialley/wp-content/uploads/2022/05/IMG_4793.jpg" class="d-block" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="http://localhost/Hanoialley/wp-content/uploads/2022/05/logo.jpg" class="d-block" alt="...">
-            </div>
-        </div>
-    </div> -->

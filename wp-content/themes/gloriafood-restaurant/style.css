@@ -240,13 +240,13 @@ span.glf-card-subbtitle-container {
 
 span.glf-card-subtitle-dash {
     width: 1.5rem;
-    border-bottom: 1px solid #f09c49;
+    border-bottom: 1px solid #590003;
     margin-right: 1rem;
     display: block;
 }
 
 span.glf-card-subtitle {
-    color: #dbcc7e;
+    color: #590003;
     font-weight: 600;
     display: block;
     text-transform: uppercase;
@@ -271,35 +271,41 @@ span.glf-card-subtitle {
     }
 }
 
+.header h1.lead {
+    -webkit-text-stroke: 1px black;
+    font-size: 6.625rem;
+}
 
-.jumbotron .jumbotron-description-container {
+.jumbotron .jumbotron-description-container, .header .jumbotron-description-container {
     display: flex;
     align-items: center;
     margin-bottom: 0;
 }
 
-.jumbotron span.jumbotron-description-left-dash {
+.jumbotron span.jumbotron-description-left-dash, .header span.jumbotron-description-left-dash {
     width: 1.5rem;
     border-bottom: 1px solid #fff;
     margin-right: 1rem;
     display: block;
 }
 
-.jumbotron span.jumbotron-description-right-dash {
+.jumbotron span.jumbotron-description-right-dash, .header span.jumbotron-description-right-dash {
     width: 1.5rem;
     border-bottom: 1px solid #fff;
     margin-left: 1rem;
     display: block;
 }
 
-.jumbotron h2.jumbotron-description {
+.jumbotron h2.jumbotron-description, .header h2.jumbotron-description  {
     font-weight: 600;
     color: #fff;
     display: block;
 }
 
-.jumbotron span.jumbotron-description.lead {
+.jumbotron span.jumbotron-description.lead, .header span.jumbotron-description.lead {
     color: #fff;
+    -webkit-text-stroke: 1px black;
+    font-size: 2rem;
 }
 
 .glf-card {
@@ -376,6 +382,14 @@ div.widget_glf-promo-cards > div.row {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+
+.glf-promo-card h3 {
+    color: #590003;
+}
+
+.glf-promo-card:hover h3, .glf-promo-card:hover span{
+    color: #dbcc7e;
 }
 
 .glf-promo-card span.glf-card-subbtitle-container {
