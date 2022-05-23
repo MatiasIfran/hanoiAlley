@@ -255,11 +255,22 @@ span.glf-card-subtitle {
 .jumbotron {
     text-align: center;
     background-color: transparent;
-    height: calc(100vh - 32px);
-    max-height: 100%;
-    overflow: hidden;
-    position: relative;
 }
+
+@media (min-width: 767px) {
+    .jumbotron {height: calc(75vh);}
+}
+
+@media (min-width: 1400px) {
+    .header {
+        text-align: center;
+        height: calc(100vh - 32px);
+        max-height: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+}
+
 
 .jumbotron .jumbotron-description-container {
     display: flex;
@@ -323,6 +334,14 @@ div.widget_glf-promo-cards > div.row {
     background-color: #fff;
     height: 100%;
     box-shadow: 0 15px 30px 00 rgba(0, 0, 0, 0.07);
+    width: 400px;
+    height: 500px;
+}
+
+.glf-promo-card-container:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/starter/IMG_4885.jpg");
+    background-size: cover;
+    background-position: center center;
 }
 
 .glf-about-card-text {
@@ -384,14 +403,17 @@ footer.entry-footer {
 }
 
 footer.site-footer {
-    background-color: #242424;
-    color: #717171;
-    padding: 4rem 0;
+    background-color: #590003;
+    padding: 2rem 0;
     font-size: 0.875rem;
 }
 
 footer.site-footer * {
-    color: #717171;
+    color: #fff;
+}
+
+footer.site-footer svg {
+    fill: #dbcc7e;
 }
 
 footer.site-footer *.widget-title {
@@ -401,17 +423,17 @@ footer.site-footer *.widget-title {
 footer.site-footer ul {
     list-style: none;
     padding-left: 0;
-    color: #7b7b7b;
+    color: #fff;
 }
 
 footer.site-footer a,
 footer.site-footer a:hover,
 footer.site-footer a:focus {
-    color: #7b7b7b;
+    color: #fff;
 }
 
 .navbar {
-    background-color: transparent;
+    background: rgb(89,0,3,0.7);
     box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.07);
 }
 
@@ -459,12 +481,6 @@ footer.site-footer a:focus {
         padding-left: 0;
         padding-right: 0;
     }
-}
-
-.jumbotron {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/starter/header.jpg");
-    background-size: cover;
-    background-position: center center;
 }
 
 .container-fluid.glf-background-card {
@@ -608,7 +624,7 @@ h6 {
 
 /** Non-home pages - START **/
 main {
-    padding: 7.5rem 0;
+    padding: 4.5rem 0;
 }
 
 .home.blog main {

@@ -412,3 +412,10 @@ function gloriafood_theme_add_editor_styles() {
     add_editor_style( ['/assets/css/glf-editor-style.css'] );
 }
 add_action( 'init', 'gloriafood_theme_add_editor_styles' );
+
+function social_newtwork_shortcode() {
+    ob_start();
+    include dirname(__FILE__).'/shortcodes/icon-social.php';
+    return ob_get_clean();
+}
+add_shortcode('social-newtwork-shortcode', 'social_newtwork_shortcode');

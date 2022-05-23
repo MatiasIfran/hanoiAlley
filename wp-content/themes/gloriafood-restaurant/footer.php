@@ -19,7 +19,7 @@
 					dynamic_sidebar( 'footer-left' );
 				} ?>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 d-flex flex-column align-self-end">
 				<?php if ( is_active_sidebar( 'footer-middle' ) ) {
 					dynamic_sidebar( 'footer-middle' );
 				} ?>
