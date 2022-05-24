@@ -1,5 +1,9 @@
 <?php
-
+	function isMobileDevice() {
+		return preg_match("/(android|avantgo|blackberry|bolt|boost|cricket|docomo
+	|fone|hiptop|mini|mobi|palm|phone|pie|tablet|up\.browser|up\.link|webos|wos)/i"
+	, $_SERVER["HTTP_USER_AGENT"]);
+	}
 class Glf_Promo_Cards extends WP_Widget {
 
 	public $args = array(
@@ -34,8 +38,10 @@ class Glf_Promo_Cards extends WP_Widget {
 		echo "<div class='row justify-content-center'>";
 		for ( $i = 1; $i <= 8; $i ++ ) {
 			if ( ! empty( $instance[ 'title_' . $i ] ) ) {
+				$result='';
+				if(isMobileDevice()){if($i%2!=0) {$result='data-aos="fade-right"';}else{$result='data-aos="fade-left"';}}
 				echo "<div class='col-lg-4 col-md-6 glf-promo-card-supercontainer'>
-                    <div class='glf-promo-card-container card' id='card_".$i."'>
+                    <div class='glf-promo-card-container card' ".$result." id='card_".$i."'>
                         <div class='glf-promo-card card-body'>
                             <h3>{$instance[ 'title_' . $i ]}</h3>
                             <span class='glf-card-subbtitle-container'>

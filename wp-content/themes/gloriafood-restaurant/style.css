@@ -464,6 +464,12 @@ div.widget_glf-promo-cards > div.row {
     color: #590003;
 }
 
+@media (max-width: 767px) {
+    .glf-promo-card h3, .glf-promo-card span{
+        color: #dbcc7e;
+    }
+}
+
 @media (min-width: 768px) {
     .glf-promo-card:hover h3, .glf-promo-card:hover span{
         color: #dbcc7e;

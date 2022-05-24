@@ -47,5 +47,8 @@ if ( 1 === get_theme_mod( 'glf_order_buttons_show_buttons', 0 ) ) {
 ?>
 
 <?php wp_footer(); ?>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
