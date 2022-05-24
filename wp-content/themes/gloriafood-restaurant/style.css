@@ -374,7 +374,7 @@ div.widget_glf-promo-cards > div.row {
     background-position: center center;
 }
 #card_7:hover {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/IMG_5011.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/IMG_4960.jpg");
     background-size: cover;
     background-position: center center;
 }
@@ -700,9 +700,6 @@ main {
         outline: none;
     }
 
-    .fixed-top {
-        position: absolute;
-    }
 }
 
 @media (max-width: 576px) {
@@ -1207,3 +1204,6 @@ td {
     border-color: #dbcc7e;
 }
 
+.wp-block-column p a:hover {
+    color: #dbcc7e;
+}

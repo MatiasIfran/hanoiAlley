@@ -74,7 +74,7 @@
 
         <?php   global $post; if ( is_page() && $post->menu_order==0) { ?>
         <div class='header wp-block-cover' style="padding:0px; min-height:auto">
-            <?php echo do_shortcode('[metaslider id="93"]'); ?>
+            <?php echo do_shortcode('[metaslider id="17"]'); ?>
             <div class="wp-block-cover__inner-container" style="position: absolute">
                 <h1 class="lead"><?php bloginfo( 'name' ); ?></h1>
                 <h2 class="jumbotron-description-container">
