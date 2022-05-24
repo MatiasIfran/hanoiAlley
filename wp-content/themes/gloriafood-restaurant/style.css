@@ -343,6 +343,9 @@ div.widget_glf-promo-cards > div.row {
     height: 500px;
 }
 
+@media (min-width: 767px) {
+
+}
 #card_1:hover {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/IMG_4885.jpg");
     background-size: cover;
@@ -486,6 +489,12 @@ footer.site-footer a:focus {
 
 .navbar {
     box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.07);
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        background: rgb(89,0,3,0.7);
+    }
 }
 
 .navbarBackground {
