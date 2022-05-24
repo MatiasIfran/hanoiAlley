@@ -341,90 +341,45 @@ div.widget_glf-promo-cards > div.row {
     height: 500px;
 }
 
-@media (max-width: 767px) {
-    #card_1 {
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/IMG_4885.jpg");
-        background-size: cover;
-        background-position: center center;
-    }
-    #card_2 {
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/IMG_4914.jpg");
-        background-size: cover;
-        background-position: center center;
-    }
-    #card_3 {
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/IMG_4899.jpg");
-        background-size: cover;
-        background-position: center center;
-    }
-    #card_4 {
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/IMG_4926.jpg");
-        background-size: cover;
-        background-position: center center;
-    }
-    #card_5 {
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/IMG_4948.jpg");
-        background-size: cover;
-        background-position: center center;
-    }
-    #card_6 {
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/IMG_4987.jpg");
-        background-size: cover;
-        background-position: center center;
-    }
-    #card_7 {
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/IMG_4960.jpg");
-        background-size: cover;
-        background-position: center center;
-    }
-    #card_8 {
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/IMG_5011.jpg");
-        background-size: cover;
-        background-position: center center;
-    }
+#card_1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://hanoialleycph.dk/wp-content/uploads/2022/05/IMG_4885.jpg");
+    background-size: cover;
+    background-position: center center;
 }
-
-@media (min-width: 768px) {
-    #card_1:hover {
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/IMG_4885.jpg");
-        background-size: cover;
-        background-position: center center;
-    }
-    #card_2:hover {
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/IMG_4914.jpg");
-        background-size: cover;
-        background-position: center center;
-    }
-    #card_3:hover {
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/IMG_4899.jpg");
-        background-size: cover;
-        background-position: center center;
-    }
-    #card_4:hover {
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/IMG_4926.jpg");
-        background-size: cover;
-        background-position: center center;
-    }
-    #card_5:hover {
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/IMG_4948.jpg");
-        background-size: cover;
-        background-position: center center;
-    }
-    #card_6:hover {
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/IMG_4987.jpg");
-        background-size: cover;
-        background-position: center center;
-    }
-    #card_7:hover {
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/IMG_4960.jpg");
-        background-size: cover;
-        background-position: center center;
-    }
-    #card_8:hover {
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/IMG_5011.jpg");
-        background-size: cover;
-        background-position: center center;
-    }
+#card_2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://hanoialleycph.dk/wp-content/uploads/2022/05/IMG_4914.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+#card_3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://hanoialleycph.dk/wp-content/uploads/2022/05/IMG_4899.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+#card_4 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://hanoialleycph.dk/wp-content/uploads/2022/05/IMG_4926.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+#card_5 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://hanoialleycph.dk/wp-content/uploads/2022/05/IMG_4948.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+#card_6 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://hanoialleycph.dk/wp-content/uploads/2022/05/IMG_4987.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+#card_7 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://hanoialleycph.dk/wp-content/uploads/2022/05/IMG_4960.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+#card_8 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://hanoialleycph.dk/wp-content/uploads/2022/05/IMG_5011.jpg");
+    background-size: cover;
+    background-position: center center;
 }
 
 .glf-about-card-text {
