@@ -344,42 +344,42 @@ div.widget_glf-promo-cards > div.row {
 }
 
 #card_1:hover {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/starter/IMG_4885.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/IMG_4885.jpg");
     background-size: cover;
     background-position: center center;
 }
 #card_2:hover {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/starter/IMG_4914.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/IMG_4914.jpg");
     background-size: cover;
     background-position: center center;
 }
 #card_3:hover {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/starter/IMG_4899.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/IMG_4899.jpg");
     background-size: cover;
     background-position: center center;
 }
 #card_4:hover {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/starter/IMG_4926.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/IMG_4926.jpg");
     background-size: cover;
     background-position: center center;
 }
 #card_5:hover {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/starter/IMG_4948.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/IMG_4948.jpg");
     background-size: cover;
     background-position: center center;
 }
 #card_6:hover {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/starter/IMG_4987.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/IMG_4987.jpg");
     background-size: cover;
     background-position: center center;
 }
 #card_7:hover {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/starter/IMG_5011.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/IMG_5011.jpg");
     background-size: cover;
     background-position: center center;
 }
 #card_8:hover {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/starter/IMG_5011.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/IMG_5011.jpg");
     background-size: cover;
     background-position: center center;
 }
@@ -485,8 +485,11 @@ footer.site-footer a:focus {
 }
 
 .navbar {
-    background: rgb(89,0,3,0.7);
     box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.07);
+}
+
+.navbarBackground {
+    background: rgb(89,0,3,0.7);
 }
 
 .navbar .navbar-brand {

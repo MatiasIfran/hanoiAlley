@@ -11,6 +11,11 @@
  */
 
 ?>
+<script type="text/javascript">
+	window.addEventListener("scroll", function(){
+		jQuery('#navbar').toggleClass("navbarBackground",window.scrollY>0)
+	})
+</script>
 <footer class="site-footer">
     <div class="container">
         <div class="row text-center justify-content-center">

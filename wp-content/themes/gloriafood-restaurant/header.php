@@ -25,20 +25,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
     </script>
-    <script>
-    jQuery(function($){
-      $('.nav-link').click(function() {
-          console.log('hola')
-          $('#bs4navbar').collapse('hide')
-      });
-    });
-  </script>
 </head>
 
 <body <?php body_class(); ?>>
 
     <?php wp_body_open(); ?>
-    <nav class="navbar navbar-expand-md navbar-light fixed-top">
+    <nav class="navbar navbar-expand-md navbar-light fixed-top" id="navbar">
         <div class="container ">
             <?php
 		if ( has_custom_logo() ) {
