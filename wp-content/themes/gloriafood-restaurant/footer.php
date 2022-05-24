@@ -13,7 +13,7 @@
 ?>
 <footer class="site-footer">
     <div class="container">
-        <div class="row">
+        <div class="row text-center justify-content-center">
             <div class="col-md-4">
 				<?php if ( is_active_sidebar( 'footer-left' ) ) {
 					dynamic_sidebar( 'footer-left' );

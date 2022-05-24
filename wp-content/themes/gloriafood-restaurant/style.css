@@ -273,7 +273,8 @@ span.glf-card-subtitle {
 
 .header h1.lead {
     -webkit-text-stroke: 1px black;
-    font-size: 6.625rem;
+    text-align: center;
+    line-height: 6rem;
 }
 
 .jumbotron .jumbotron-description-container, .header .jumbotron-description-container {
@@ -304,8 +305,7 @@ span.glf-card-subtitle {
 
 .jumbotron span.jumbotron-description.lead, .header span.jumbotron-description.lead {
     color: #fff;
-    -webkit-text-stroke: 1px black;
-    font-size: 2rem;
+    -webkit-text-stroke: .5px black;
 }
 
 .glf-card {
@@ -338,14 +338,48 @@ div.widget_glf-promo-cards > div.row {
 .glf-promo-card-container {
     padding: 0.625rem;
     background-color: #fff;
-    height: 100%;
     box-shadow: 0 15px 30px 00 rgba(0, 0, 0, 0.07);
-    width: 400px;
+    width: 21.875rem;
     height: 500px;
 }
 
-.glf-promo-card-container:hover {
+#card_1:hover {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/starter/IMG_4885.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+#card_2:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/starter/IMG_4914.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+#card_3:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/starter/IMG_4899.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+#card_4:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/starter/IMG_4926.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+#card_5:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/starter/IMG_4948.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+#card_6:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/starter/IMG_4987.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+#card_7:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/starter/IMG_5011.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+#card_8:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/starter/IMG_5011.jpg");
     background-size: cover;
     background-position: center center;
 }
@@ -377,7 +411,6 @@ div.widget_glf-promo-cards > div.row {
 
 .glf-promo-card {
     border: 0.0625rem solid #dbcc7e;
-    padding: 1.8125rem;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -428,6 +461,11 @@ footer.site-footer * {
 
 footer.site-footer svg {
     fill: #dbcc7e;
+}
+
+footer.site-footer svg:hover {
+    fill: #590003;
+    background-color: #dbcc7e;
 }
 
 footer.site-footer *.widget-title {
@@ -564,7 +602,7 @@ h1.lead {
 
 @media (min-width: 576px) {
     h1.lead {
-        font-size: 4.625rem;
+        font-size: 5.625rem;
         line-height: 5rem;
     }
 }
@@ -577,7 +615,7 @@ h2 {
 
 h2.jumbotron-description-container {
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.25rem;
+    font-size: 2rem;
     font-style: normal;
     line-height: 1.5625rem;
     color: #fff;
@@ -608,20 +646,12 @@ h6 {
     font-size: 1.125rem;
     line-height: 1.5rem;
 }
-
-.lead {
-    font-size: 1.25rem;
-    line-height: 1.5625rem;
-}
-
-.small {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-}
-
-.caption {
-    font-size: 0.75rem;
-    line-height: 1.125rem;
+ 
+@media (min-width: 576px) {
+    .lead {
+        font-size: 2rem;
+        line-height: 1.5625rem;
+    }
 }
 
 .subtitle {
@@ -1162,3 +1192,15 @@ td {
 }
 
 /** Sticky order buttons - END **/
+
+.btn-outline-primary {
+    color: #fff;
+    background-color: #590003;
+    border-color: #590003;
+}
+.btn-outline-primary:hover {
+    color: #590003;
+    background-color: #dbcc7e;
+    border-color: #dbcc7e;
+}
+
