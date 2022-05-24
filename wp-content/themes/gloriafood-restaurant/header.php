@@ -25,6 +25,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
     </script>
+    <script>
+    jQuery(function($){
+      $('.nav-link').click(function() {
+          console.log('hola')
+          $('#bs4navbar').collapse('hide')
+      });
+    });
+  </script>
 </head>
 
 <body <?php body_class(); ?>>
@@ -71,19 +79,19 @@
     </nav>
 
     <div class="container-fluid header-container">
-  
-            <?php   global $post; if ( is_page() && $post->menu_order==0) { ?>
-                <div class='header wp-block-cover' style="padding:0px; min-height:auto">
-                    <?php echo do_shortcode('[metaslider id="93"]'); ?>
-                    <div class="wp-block-cover__inner-container" style="position: absolute">
-                        <h1 class="lead"><?php bloginfo( 'name' ); ?></h1>
-                        <h2 class="jumbotron-description-container">
-                            <span class="jumbotron-description-left-dash ml-auto"></span>
-                            <span class="jumbotron-description lead"><?php bloginfo( 'description' ); ?></span>
-                            <span class="jumbotron-description-right-dash mr-auto"></span>
-                        </h2>
-                    </div>
-                
+
+        <?php   global $post; if ( is_page() && $post->menu_order==0) { ?>
+        <div class='header wp-block-cover' style="padding:0px; min-height:auto">
+            <?php echo do_shortcode('[metaslider id="93"]'); ?>
+            <div class="wp-block-cover__inner-container" style="position: absolute">
+                <h1 class="lead"><?php bloginfo( 'name' ); ?></h1>
+                <h2 class="jumbotron-description-container">
+                    <span class="jumbotron-description-left-dash ml-auto"></span>
+                    <span class="jumbotron-description lead"><?php bloginfo( 'description' ); ?></span>
+                    <span class="jumbotron-description-right-dash mr-auto"></span>
+                </h2>
+            </div>
+
             <?php } elseif ( is_404() ) { } elseif ( is_search() ) {
                 if ( have_posts() ) {
 				    echo "<h1 class='lead'>" . esc_html__( 'Search results for:', 'gloriafood-restaurant' ) . ' ' . get_search_query() . "</h1>";
@@ -99,6 +107,6 @@
                 echo "<h1 class='lead'>" . get_the_title() . "</h1>";
             }
             ?>
-                
+
         </div>
     </div>

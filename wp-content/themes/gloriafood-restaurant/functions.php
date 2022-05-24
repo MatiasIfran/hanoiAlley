@@ -419,3 +419,10 @@ function social_newtwork_shortcode() {
     return ob_get_clean();
 }
 add_shortcode('social-newtwork-shortcode', 'social_newtwork_shortcode');
+
+function icon_review_shortcode() {
+    ob_start();
+    include dirname(__FILE__).'/shortcodes/icon-review-google.php';
+    return ob_get_clean();
+}
+add_shortcode('icon-review-shortcode', 'icon_review_shortcode');
