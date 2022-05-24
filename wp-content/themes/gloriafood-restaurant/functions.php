@@ -176,10 +176,9 @@ add_action( 'after_setup_theme', 'gloriafood_content_width', 0 );
  * Enqueue scripts and styles.
  */
 function gloriafood_scripts() {
-	wp_enqueue_style( 'bootstrap', get_theme_file_uri() . '/css/bootstrap.css', array(), gloriafood_get_version() );
-	wp_enqueue_style( 'gloriafood-style', get_stylesheet_uri(), array( 'bootstrap' ), gloriafood_get_version() );
+	wp_enqueue_style( 'gloriafood-style', get_stylesheet_uri(), array(), gloriafood_get_version() );
 
-	wp_enqueue_script( 'bootstrap-js', get_theme_file_uri() . '/js/bootstrap.js', array( 'jquery' ), gloriafood_get_version(), true );
+	wp_enqueue_script( 'bootstrap-js', get_theme_file_uri() . '/js/bootstrap.min.js', array( 'jquery' ), gloriafood_get_version(), true );
 
 	wp_enqueue_style( 'gloriafood-print-style', "https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i|PT+Serif:400,400i,700,700i", array(), gloriafood_get_version(), 'all' );
 

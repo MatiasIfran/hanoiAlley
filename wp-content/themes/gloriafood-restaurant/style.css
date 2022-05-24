@@ -15,6 +15,11 @@ Text Domain: Hanoi-Alley-restaurant
 This theme, like WordPress, is licensed under the GPL.
 */
 
+:root {
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
 /** WordPress core classes - START **/
 .alignnone {
     margin: 5px 20px 20px 0;
@@ -216,13 +221,6 @@ footer.site-footer {
     color: #717171;
 }
 
-a,
-a:hover,
-a:focus {
-    color: #f09c49;
-    text-decoration: none;
-}
-
 .custom-logo {
     height: 3rem;
     width: auto;
@@ -343,48 +341,90 @@ div.widget_glf-promo-cards > div.row {
     height: 500px;
 }
 
-@media (min-width: 767px) {
+@media (max-width: 767px) {
+    #card_1 {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/IMG_4885.jpg");
+        background-size: cover;
+        background-position: center center;
+    }
+    #card_2 {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/IMG_4914.jpg");
+        background-size: cover;
+        background-position: center center;
+    }
+    #card_3 {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/IMG_4899.jpg");
+        background-size: cover;
+        background-position: center center;
+    }
+    #card_4 {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/IMG_4926.jpg");
+        background-size: cover;
+        background-position: center center;
+    }
+    #card_5 {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/IMG_4948.jpg");
+        background-size: cover;
+        background-position: center center;
+    }
+    #card_6 {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/IMG_4987.jpg");
+        background-size: cover;
+        background-position: center center;
+    }
+    #card_7 {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/IMG_4960.jpg");
+        background-size: cover;
+        background-position: center center;
+    }
+    #card_8 {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/IMG_5011.jpg");
+        background-size: cover;
+        background-position: center center;
+    }
+}
 
-}
-#card_1:hover {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/IMG_4885.jpg");
-    background-size: cover;
-    background-position: center center;
-}
-#card_2:hover {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/IMG_4914.jpg");
-    background-size: cover;
-    background-position: center center;
-}
-#card_3:hover {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/IMG_4899.jpg");
-    background-size: cover;
-    background-position: center center;
-}
-#card_4:hover {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/IMG_4926.jpg");
-    background-size: cover;
-    background-position: center center;
-}
-#card_5:hover {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/IMG_4948.jpg");
-    background-size: cover;
-    background-position: center center;
-}
-#card_6:hover {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/IMG_4987.jpg");
-    background-size: cover;
-    background-position: center center;
-}
-#card_7:hover {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/IMG_4960.jpg");
-    background-size: cover;
-    background-position: center center;
-}
-#card_8:hover {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/IMG_5011.jpg");
-    background-size: cover;
-    background-position: center center;
+@media (min-width: 768px) {
+    #card_1:hover {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/IMG_4885.jpg");
+        background-size: cover;
+        background-position: center center;
+    }
+    #card_2:hover {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/IMG_4914.jpg");
+        background-size: cover;
+        background-position: center center;
+    }
+    #card_3:hover {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/IMG_4899.jpg");
+        background-size: cover;
+        background-position: center center;
+    }
+    #card_4:hover {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/IMG_4926.jpg");
+        background-size: cover;
+        background-position: center center;
+    }
+    #card_5:hover {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/IMG_4948.jpg");
+        background-size: cover;
+        background-position: center center;
+    }
+    #card_6:hover {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/IMG_4987.jpg");
+        background-size: cover;
+        background-position: center center;
+    }
+    #card_7:hover {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/IMG_4960.jpg");
+        background-size: cover;
+        background-position: center center;
+    }
+    #card_8:hover {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/IMG_5011.jpg");
+        background-size: cover;
+        background-position: center center;
+    }
 }
 
 .glf-about-card-text {
@@ -424,10 +464,11 @@ div.widget_glf-promo-cards > div.row {
     color: #590003;
 }
 
-.glf-promo-card:hover h3, .glf-promo-card:hover span{
-    color: #dbcc7e;
+@media (min-width: 768px) {
+    .glf-promo-card:hover h3, .glf-promo-card:hover span{
+        color: #dbcc7e;
+    }
 }
-
 .glf-promo-card span.glf-card-subbtitle-container {
     margin-bottom: 2rem;
 }
@@ -526,7 +567,7 @@ footer.site-footer a:focus {
 }
 
 .navbar .navbar-nav .nav-link:hover {
-    color: #dbcc7e;
+    color: #dbcc7e !important;
 }
 
 @media (min-width: 576px) {
@@ -542,8 +583,8 @@ footer.site-footer a:focus {
 
     .container,
     .container-fluid {
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
     }
 }
 
@@ -929,7 +970,7 @@ button#TB_closeWindowButton:focus .tb-close-icon {
 
 /** Navigation - START **/
 .navbar-light .navbar-nav .nav-link {
-    color: #fff;
+    color: #fff !important;
     font-size: 0.875rem;
 }
 
@@ -937,7 +978,7 @@ button#TB_closeWindowButton:focus .tb-close-icon {
 .navbar-light .navbar-nav .active > .nav-link,
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .nav-link.active {
-    color: #dbcc7e;
+    color: #dbcc7e !important;
 }
 
 .navbar .navbar-nav a.dropdown-item.active, .navbar .navbar-nav a.dropdown-item:active {
@@ -1215,4 +1256,15 @@ td {
 
 .wp-block-column p a:hover {
     color: #dbcc7e;
+}
+
+a,
+a:hover,
+a:focus {
+    color: #f09c49 !important;
+    text-decoration: none;
+}
+
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+    width: auto !important;
 }
