@@ -31,35 +31,12 @@ class Glf_Promo_Cards extends WP_Widget {
 			}
 		}
 
-		$count_to_size = array(
-			'lg' => array(
-				1 => array( 4 ),
-				2 => array( 6, 6 ),
-				3 => array( 4, 4, 4 ),
-				4 => array( 6, 6, 6, 6 ),
-				5 => array( 4, 4, 4, 6, 6 ),
-				6 => array( 4, 4, 4, 4, 4, 4 ),
-				7 => array( 4, 4, 4, 4, 4, 4, 4 )
-			),
-			'md' => array(
-				1 => array( 6 ),
-				2 => array( 6, 6 ),
-				3 => array( 6, 6, 12 ),
-				4 => array( 6, 6, 6, 6 ),
-				5 => array( 6, 6, 6, 6, 12 ),
-				6 => array( 6, 6, 6, 6, 6, 6 ),
-				7 => array( 6, 6, 6, 6, 6, 6, 6 )
-			)
-		);
-
-		$pos = 0;
 		echo "<div class='row justify-content-center'>";
 		for ( $i = 1; $i <= 7; $i ++ ) {
 			if ( ! empty( $instance[ 'title_' . $i ] ) ) {
-				$pos ++;
-				echo "<div class='col-lg-" . ( $count_to_size['lg'][ $count ][ $pos - 1 ] ) . " col-md-" . ( $count_to_size['md'][ $count ][ $pos - 1 ] ) . " glf-promo-card-supercontainer'>
-                    <div class='glf-promo-card-container' id='card_".$i."'>
-                        <div class='glf-promo-card'>
+				echo "<div class='col-lg-4 col-md-6 glf-promo-card-supercontainer'>
+                    <div class='glf-promo-card-container card' id='card_".$i."'>
+                        <div class='glf-promo-card card-body'>
                             <h3>{$instance[ 'title_' . $i ]}</h3>
                             <span class='glf-card-subbtitle-container'>
                                 <span class='glf-card-subtitle-dash'></span>

@@ -71,9 +71,9 @@
     </nav>
 
     <div class="container-fluid header-container">
-    
-            <?php if ( is_front_page() ) { ?>
-                <div class='header wp-block-cover' style="padding:0px">
+  
+            <?php   global $post; if ( is_page() && $post->menu_order==0) { ?>
+                <div class='header wp-block-cover' style="padding:0px; min-height:auto">
                     <?php echo do_shortcode('[metaslider id="93"]'); ?>
                     <div class="wp-block-cover__inner-container" style="position: absolute">
                         <h1 class="lead"><?php bloginfo( 'name' ); ?></h1>
@@ -84,9 +84,7 @@
                         </h2>
                     </div>
                 
-            <?php } elseif ( is_404() ) { 
-                echo "<h1 class='lead'>" . esc_html__( 'Oops! That page can&rsquo;t be found.', 'gloriafood-restaurant' ) . "</h1>";
-            } elseif ( is_search() ) {
+            <?php } elseif ( is_404() ) { } elseif ( is_search() ) {
                 if ( have_posts() ) {
 				    echo "<h1 class='lead'>" . esc_html__( 'Search results for:', 'gloriafood-restaurant' ) . ' ' . get_search_query() . "</h1>";
 			    } else {
