@@ -29,14 +29,14 @@ class Glf_Promo_Cards extends WP_Widget {
 		}
 
 		$count = 0;
-		for ( $i = 1; $i <= 8; $i ++ ) {
+		for ( $i = 1; $i <= 9; $i ++ ) {
 			if ( ! empty( $instance[ 'title_' . $i ] ) ) {
 				$count ++;
 			}
 		}
 
 		echo "<div class='row justify-content-center'>";
-		for ( $i = 1; $i <= 8; $i ++ ) {
+		for ( $i = 1; $i <= 9; $i ++ ) {
 			if ( ! empty( $instance[ 'title_' . $i ] ) ) {
 				if(isMobileDevice()){if($i%2!=0) {$result='data-aos="fade-right"';}else{$result='data-aos="fade-left"';}}else{$result='data-aos="zoom-in"';}
 				echo "<div class='col-lg-4 col-md-6 glf-promo-card-supercontainer'>
@@ -60,7 +60,7 @@ class Glf_Promo_Cards extends WP_Widget {
 	}
 
 	public function form( $instance ) {
-		for ( $i = 1; $i <= 8; $i ++ ) :
+		for ( $i = 1; $i <= 9; $i ++ ) :
 			$title = ! empty( $instance[ 'title_' . $i ] ) ? $instance[ 'title_' . $i ] : '';
 			$subtitle = ! empty( $instance[ 'subtitle_' . $i ] ) ? $instance[ 'subtitle_' . $i ] : '';
 			$text = ! empty( $instance[ 'text_' . $i ] ) ? $instance[ 'text_' . $i ] : '';
@@ -117,7 +117,7 @@ class Glf_Promo_Cards extends WP_Widget {
 
 		$instance = array();
 
-		for ( $i = 1; $i <= 8; $i ++ ) {
+		for ( $i = 1; $i <= 9; $i ++ ) {
 			$instance[ 'title_' . $i ]       = ( ! empty( $new_instance[ 'title_' . $i ] ) ) ? wp_strip_all_tags( $new_instance[ 'title_' . $i ] ) : '';
 			$instance[ 'subtitle_' . $i ]    = ( ! empty( $new_instance[ 'subtitle_' . $i ] ) ) ? wp_strip_all_tags( $new_instance[ 'subtitle_' . $i ] ) : '';
 			$instance[ 'text_' . $i ]        = ( ! empty( $new_instance[ 'text_' . $i ] ) ) ? $new_instance[ 'text_' . $i ] : '';
