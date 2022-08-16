@@ -17,11 +17,12 @@
 <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="profile" href="https://gmpg.org/xfn/11"/>
+    <link rel="profile" href="https://gmpg.org/xfn/11" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     <?php wp_head(); ?>
 </head>
 
@@ -31,32 +32,33 @@
     <nav class="navbar navbar-expand-md navbar-light fixed-top" id="navbar">
         <div class="container ">
             <?php
-		if ( has_custom_logo() ) {
-			the_custom_logo();
-		} else {
-			?>
+                if ( has_custom_logo() ) {
+                    the_custom_logo();
+                } else {
+                    ?>
             <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
             <?php
-		}
-		?>
+                }
+		    ?>
 
             <button id="bs4navbar-toggler" class="navbar-toggler" type="button" data-toggle="collapse"
                 data-target="#bs4navbar" aria-controls="bs4navbar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <?php
-		wp_nav_menu( array(
-			'theme_location'  => 'menu-1',
-			'container'       => 'div',
-			'container_id'    => 'bs4navbar',
-			'container_class' => 'collapse navbar-collapse',
-			'menu_id'         => false,
-			'menu_class'      => 'navbar-nav ml-auto',
-			'depth'           => 0,
-			'fallback_cb'     => 'bs4navwalker::fallback',
-			'walker'          => new bs4navwalker()
-		) );
-		?>
+                wp_nav_menu( array(
+                    'theme_location'  => 'menu-1',
+                    'container'       => 'div',
+                    'container_id'    => 'bs4navbar',
+                    'container_class' => 'collapse navbar-collapse',
+                    'menu_id'         => false,
+                    'menu_class'      => 'navbar-nav ml-auto',
+                    'depth'           => 0,
+                    'fallback_cb'     => 'bs4navwalker::fallback',
+                    'walker'          => new bs4navwalker()
+                ) );
+            ?>
 
             <?php
 		if ( 1 === get_theme_mod( 'glf_order_buttons_show_buttons', 0 ) ) {
